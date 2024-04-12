@@ -38,7 +38,6 @@ def mainV1(url: String): Either[String, String] = {
 * and using for-comprehension (mainV2)
 ```scala
 def mainV2(url: String): Either[String, String] = {
-{
     val parsedUri = Uri.parse(url)
 
     val result = {
